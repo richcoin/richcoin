@@ -1,4 +1,4 @@
-Fastcoin - a fork of Litecoin version with fast blocks and transactions. Like Litecoin it uses scrypt as a proof of work scheme.
+Richcoin - a fork of Litecoin version with fast blocks and transactions. Like Litecoin it uses scrypt as a proof of work scheme.
 
 	- Total coins will be 165,888,000.
 	- 12 seconds block target

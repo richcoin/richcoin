@@ -1,7 +1,7 @@
-// Copyright (c) 2011-2012 The Bitcoin developers
-// Copyright (c) 2011-2012 Litecoin Developers
-// Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// Copyright (c) 2011-2012 The Richcoin developers
+ 
+ 
+ 
 
 #include "sync.h"
 #include "util.h"

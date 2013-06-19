@@ -1,9 +1,9 @@
-Building Fastcoin
+Building Richcoin
 
-See doc/readme-qt.rst for instructions on building Fastcoin-QT,
+See doc/readme-qt.rst for instructions on building Richcoin-QT,
 the intended-for-end-users, nice-graphical-interface, reference
 implementation of Junkcoin.
 
-See doc/build-*.txt for instructions on building fastcoind,
+See doc/build-*.txt for instructions on building richcoind,
 the intended-for-services, no-graphical-interface, reference
 implementation of Junkcoin.

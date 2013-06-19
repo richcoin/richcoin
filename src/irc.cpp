@@ -1,9 +1,9 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 Fastcoin Developers
-// Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+ 
+ 
+ 
+// Copyright (c) 2013 Richcoin Developers
+ 
+ 
 
 #include "irc.h"
 #include "net.h"
@@ -193,7 +193,7 @@ void ThreadIRCSeed(void* parg)
     IMPLEMENT_RANDOMIZE_STACK(ThreadIRCSeed(parg));
 
     // Make this thread recognisable as the IRC seeding thread
-    RenameThread("bitcoin-ircseed");
+    RenameThread("richcoin-ircseed");
 
     try
     {
@@ -295,14 +295,14 @@ void ThreadIRCSeed2(void* parg)
         }
         
         if (fTestNet) {
-            Send(hSocket, "JOIN #fastcoinTEST3\r");
-            Send(hSocket, "WHO #fastcoinTEST3\r");
+            Send(hSocket, "JOIN #richcoinTEST3\r");
+            Send(hSocket, "WHO #richcoinTEST3\r");
         } else {
-            // randomly join #fastcoin00-#fastcoin99
+            // randomly join #richcoin00-#richcoin99
             int channel_number = GetRandInt(100);
-            channel_number = 0; // Fastcoin: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #fastcoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #fastcoin%02d\r", channel_number).c_str());
+            channel_number = 0; // Richcoin: for now, just use one channel
+            Send(hSocket, strprintf("JOIN #richcoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #richcoin%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();

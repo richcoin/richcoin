@@ -1,5 +1,5 @@
-bitcoin-qt usr/bin
-share/pixmaps/bitcoin32.xpm usr/share/pixmaps
-share/pixmaps/bitcoin80.xpm usr/share/pixmaps
-debian/bitcoin-qt.desktop usr/share/applications
-debian/bitcoin-qt.protocol usr/share/kde4/services/
+richcoin-qt usr/bin
+share/pixmaps/richcoin32.xpm usr/share/pixmaps
+share/pixmaps/richcoin80.xpm usr/share/pixmaps
+debian/richcoin-qt.desktop usr/share/applications
+debian/richcoin-qt.protocol usr/share/kde4/services/

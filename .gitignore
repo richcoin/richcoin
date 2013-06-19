@@ -1,6 +1,6 @@
 src/*.exe
-src/fastcoind
-src/test_fastcoin
+src/richcoind
+src/test_richcoin
 src/build.h
 .*.swp
 *.*~*
@@ -9,11 +9,11 @@ src/build.h
 *.orig
 *.o
 *.patch
-.bitcoin
+.richcoin
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-fastcoin-qt
+richcoin-qt
 #resources cpp
 qrc_*.cpp
 #qt creator
