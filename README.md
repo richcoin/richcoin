@@ -1,10 +1,19 @@
-Richcoin - a fork of Litecoin version with fast blocks and transactions. Like Litecoin it uses scrypt as a proof of work scheme.
+Richcoin - a new crypto coin focus on increase your wealth. Like Litecoin it uses scrypt as a proof of work scheme.
 
         - Total coins will be 88,888,888.
-        - 8.8 seconds block target
+        - 88 seconds per block 
+		- 88 coins per block, will be halved every 508 days (or 4,993,68 blocks)
+			- 1-588 blocks: 0 coins
+			- 589-688 blocks: 8 coins
+			- 689-788 blocks: 18 coins
+			- 789-888 blocks: 28 coins
+			- 889-988 blocks: 38 coins
+			- 989-1888 blocks: 58 coins
+			- 1889-2888 blocks: 68 coins
+			- from 2889 block, the reward is 88 coins.
+			
         - Difficulty retargets once every 88 blocks
-        - Each block will have 8.8 coins, will be halved every 508 days (or 4,993,680 blocks).
-	- 4 confirmations per transaction.
+		- 3 confirmations per transaction.
         - Ports: connection 28888, RPC 58888.
 
 Development process
