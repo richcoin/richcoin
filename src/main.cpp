@@ -33,7 +33,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 
-uint256 hashGenesisBlock("0x9dbb879b261d5b10d345efa7369c43f9d10e4c3c81f284aa916191c1c0b54f10");
+uint256 hashGenesisBlock("0x8403f0c59b1e9bed971be9c4fc92ada5b307505b648796d5dcaaf7117ecbfbfb");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Richcoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -953,22 +953,10 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
     printf("  nActualTimespan = %"PRI64d"  before bounds\n", nActualTimespan);
 
-    if ((pindexLast->nHeight+1) < 2888)
-	{
-		if (nActualTimespan < nTargetTimespan/32)
-			nActualTimespan = nTargetTimespan/32;
-	}
-    else if ((pindexLast->nHeight+1) < 5888)
-	{
-		if (nActualTimespan < nTargetTimespan/8)
-			nActualTimespan = nTargetTimespan/8;
-	}
-	else
-	{
-		if (nActualTimespan < nTargetTimespan/4)
-			nActualTimespan = nTargetTimespan/4;
-	}
 
+
+    if (nActualTimespan < nTargetTimespan/4)
+        nActualTimespan = nTargetTimespan/4;
     if (nActualTimespan > nTargetTimespan*4)
         nActualTimespan = nTargetTimespan*4;
 
@@ -2073,7 +2061,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.GetHash() = %s\n", block.GetHash().ToString().c_str());
         printf("hashGenesisBlock = %s\n", hashGenesisBlock.ToString().c_str());
         printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x26e3a0384b7578102c01a8fe8245ce4a5c5ded4a041ffc49053274d68ca6f296"));
+        assert(block.hashMerkleRoot == uint256("0x421b608ba3645a4900c9bb53938be9581c911cfb26f093af16722c4dc184cfcb"));
 
         // If genesis block hash does not match, then generate new genesis hash.
         if (false && block.GetHash() != hashGenesisBlock)
