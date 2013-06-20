@@ -17,10 +17,15 @@
 #include <string>
 #include "uint256.h"
 
+const int DEF_PROT=28888;
+const int DEF_RPCPORT=58888;
+const int DEF_TESTNET_PORT=28889;
+const int DEF_TESTNET_RPCPORT=58889;
+
 extern bool fTestNet;
 static inline unsigned short GetDefaultPort(const bool testnet = fTestNet)
 {
-    return testnet ? 19526 : 9526;
+    return testnet ? DEF_TESTNET_PORT : DEF_PROT;
 }
 
 

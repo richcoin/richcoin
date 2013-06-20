@@ -4,22 +4,27 @@
 
 USE_UPNP:=0
 
+BOOST_SUFFIX?=-mgw46-mt-sd-1_53
+
 INCLUDEPATHS= \
- -I"C:\boost_1_53_0" \
- -I"c:\db-4.8.30.NC\build_unix" \
- -I"c:\openssl-1.0.1e\include" 
+ -I"$(CURDIR)" \
+ -I"E:\realcoin-dev\deps\boost_1_53_0" \
+ -I"E:\realcoin-dev\deps\db-4.8.30.NC\build_unix" \
+ -I"E:\realcoin-dev\deps\openssl-1.0.1e\include"\
+ -I"E:\realcoin-dev\deps\miniupnpc-1.6"
 
 LIBPATHS= \
- -L"c:\boost_1_53_0\stage/lib" \
- -L"c:\db-4.8.30.NC\build_unix" \
- -L"c:\openssl-1.0.1e" \
- -L"c:\upnpc-exe-win32"
+ -L"E:\realcoin-dev\deps\boost_1_53_0\stage\lib" \
+ -L"E:\realcoin-dev\deps\db-4.8.30.NC\build_unix" \
+ -L"E:\realcoin-dev\deps\openssl-1.0.1e"\
+ -L"E:\realcoin-dev\deps\upnpc-exe-win32-20121009"
 
 LIBS= \
- -l boost_system-mgw45-mt-d-1_53 \
- -l boost_filesystem-mgw45-mt-d-1_53 \
- -l boost_program_options-mgw45-mt-d-1_53 \
- -l boost_thread-mgw45-mt-d-1_53 \
+ -l boost_system-mgw46-mt-sd-1_53 \
+ -l boost_filesystem-mgw46-mt-sd-1_53 \
+ -l boost_program_options-mgw46-mt-sd-1_53 \
+ -l boost_thread-mgw46-mt-sd-1_53 \
+ -l boost_chrono-mgw46-mt-sd-1_53 \
  -l db_cxx \
  -l ssl \
  -l crypto
@@ -31,7 +36,7 @@ CFLAGS=-mthreads -O2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-par
 TESTDEFS = -DTEST_DATA_DIR=$(abspath test/data)
 
 ifdef USE_UPNP
- LIBPATHS += -L"c:\upnpc-exe-win32"
+ LIBPATHS += -L"E:\realcoin-dev\deps\upnpc-exe-win32-20121009"
  LIBS += -l miniupnpc -l iphlpapi
  DEFS += -DSTATICLIB -DUSE_UPNP=$(USE_UPNP)
 endif

@@ -834,18 +834,55 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 32 * COIN;
+    int64 nSubsidy = 88 * COIN;
+    if(nHeight==1)
+    {
+        nSubsidy=1000120*COIN;
+    }
+    else if(nHeight < 588)
+    {
+        nSubsidy = 0 * COIN;
+    }
+    else if(nHeight < 688)
+    {
+        nSubsidy = 1 * COIN;
+    }
+    else if(nHeight < 788)
+    {
+        nSubsidy = 2 * COIN;
+    }
+    else if(nHeight < 888)
+    {
+        nSubsidy = 4 * COIN;
+    }
+    else if(nHeight < 988)
+    {
+        nSubsidy = 8 * COIN;
+    }
+    else if(nHeight < 1888)
+    {
+        nSubsidy = 16 * COIN;
+    }
+    else if(nHeight < 2888)
+    {
+        nSubsidy = 32 * COIN;
+    }
+    else if(nHeight < 5888)
+    {
+        nSubsidy = 64 * COIN;
+    }
 
-	// Subsidy is cut in half every 2,592,000 blocks, which will occur approximately every 6 months
-    nSubsidy >>= (nHeight / 2592000); // Richcoin: 2,592K blocks in ~6 months
+
+    // Subsidy is cut in half every 499368 blocks, which will occur approximately every 508 days
+    nSubsidy >>= (nHeight / 499368); // Richcoin: 4993680 blocks in 508 days
 
     return nSubsidy + nFees;
 }
 
 
-static const int64 nTargetTimespan = 60 * 60;	// Richcoin: retarget every 1 hour
-static const int64 nTargetSpacing = 12;			// Richcoin: 12 seconds
-static const int64 nInterval = nTargetTimespan / nTargetSpacing;	// 300
+static const int64 nTargetTimespan = 88 * 88;	// Richcoin: retarget every 130 minutes
+static const int64 nTargetSpacing = 88;			// Richcoin: 88 seconds a block
+static const int64 nInterval = nTargetTimespan / nTargetSpacing;	// 88
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -919,12 +956,12 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
     printf("  nActualTimespan = %"PRI64d"  before bounds\n", nActualTimespan);
 
-	if ((pindexLast->nHeight+1) < 1250)
+    if ((pindexLast->nHeight+1) < 2888)
 	{
 		if (nActualTimespan < nTargetTimespan/32)
 			nActualTimespan = nTargetTimespan/32;
 	}
-	else if ((pindexLast->nHeight+1) < 4000)
+    else if ((pindexLast->nHeight+1) < 5888)
 	{
 		if (nActualTimespan < nTargetTimespan/8)
 			nActualTimespan = nTargetTimespan/8;
@@ -2012,19 +2049,8 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        // Genesis Block:
-		// block.GetHash() = ecba185817b726ef62e53afb14241a8095bd9613d2d3df679911029b83c98e5b
-		// hashGenesisBlock = ecba185817b726ef62e53afb14241a8095bd9613d2d3df679911029b83c98e5b
-		// block.hashMerkleRoot = ba3827aaf56440074e5436db36421d3a38645bc0f1a7c378a48b7daf3c078256
-		// CBlock(hash=ecba185817b726ef62e5, PoW=a124332a8d96040c081f, ver=1, hashPrevBlock=00000000000000000000, 
-		//     hashMerkleRoot=ba3827aaf5, nTime=1369761817, nBits=1e0ffff0, nNonce=128181112, vtx=1)
-		//   CTransaction(hash=ba3827aaf5, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-		//     CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d01044b417273656e616c20332042726973746f6c2041636164656d79203020566974616c20466f6f7462616c6c202d20417273656e616c2030353a3431204d6f6e2c203237204d61792032303133)
-		//     CTxOut(nValue=32.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
-		//   vMerkleTree: ba3827aaf5 
-
         // Genesis block
-        const char* pszTimestamp = "Arsenal 3 Bristol Academy 0 Vital Football - Arsenal 05:41 Mon, 27 May 2013";
+        const char* pszTimestamp = "RichCoin is the most valuable coins allover the world. - dolf 12:00 Thu, 20 June 2013";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2036,14 +2062,14 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1369761817;
+        block.nTime    = 1371700800;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 128181112;
+        block.nNonce   = 1371700800;
 
         if (fTestNet)
         {
-            block.nTime    = 1365711198;
-            block.nNonce   = 111794999;
+            block.nTime    = 1371700800;
+            block.nNonce   = 1371700800;
         }
 
         //// debug print

@@ -1,11 +1,11 @@
 Richcoin - a fork of Litecoin version with fast blocks and transactions. Like Litecoin it uses scrypt as a proof of work scheme.
 
-	- Total coins will be 165,888,000.
-	- 12 seconds block target
-	- Difficulty retargets once every hour
-	- Each block will have 32 coins, will be halved every year (or 2,592,000 blocks).
+        - Total coins will be 88,888,888.
+        - 8.8 seconds block target
+        - Difficulty retargets once every 88 blocks
+        - Each block will have 8.8 coins, will be halved every 508 days (or 4,993,680 blocks).
 	- 4 confirmations per transaction.
-	- Ports: connection 9526, RPC 9527.
+        - Ports: connection 28888, RPC 58888.
 
 Development process
 ===================

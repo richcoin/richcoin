@@ -17,7 +17,15 @@ CONFIG += no_include_pwd
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 # Change following your build environment
 # I am using mingw to build
-
+BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_53
+BOOST_INCLUDE_PATH=E:\realcoin-dev\deps\boost_1_53_0
+BOOST_LIB_PATH=E:\realcoin-dev\deps\boost_1_53_0\stage\lib
+BDB_INCLUDE_PATH=E:\realcoin-dev\deps\db-4.8.30.NC\build_unix
+BDB_LIB_PATH=E:\realcoin-dev\deps\db-4.8.30.NC\build_unix
+OPENSSL_INCLUDE_PATH=E:\realcoin-dev\deps\openssl-1.0.1e\include
+OPENSSL_LIB_PATH=E:\realcoin-dev\deps\openssl-1.0.1e
+MINIUPNPC_INCLUDE_PATH=E:\realcoin-dev\deps\miniupnpc-1.6
+MINIUPNPC_LIB_PATH=E:\realcoin-dev\deps\upnpc-exe-win32-20121009
 
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -352,8 +360,8 @@ LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB
 LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX -loleaut32
 # -lgdi32 has to happen after -lcrypto (see  #681)
 windows:LIBS += -lole32 -luuid -lgdi32 
-LIBS += E:\MinGW\lib\libws2_32.a
-LIBS += E:\MinGW\lib\liboleaut32.a
+LIBS += D:\MinGW\lib\libws2_32.a
+LIBS += D:\MinGW\lib\liboleaut32.a
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
 
 contains(RELEASE, 1) {
