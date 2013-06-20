@@ -5,12 +5,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
         <source>About Richcoin</source>
-        <translation>关于比特币</translation>
+        <translation>关于财富币</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="53"/>
         <source>&lt;b&gt;Richcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;比特币&lt;/b&gt;版本</translation>
+        <translation>&lt;b&gt;财富币&lt;/b&gt;版本</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="97"/>
@@ -21,7 +21,7 @@ This is experimental software.
 Distributed under the MIT/X11 software license, see the accompanying file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>版权归比特币开发者所有  © 2009-2012
+        <translation>版权归财富币开发者所有  © 2009-2012
 
 这是一个实验性软件。
 
@@ -40,7 +40,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
         <source>These are your Richcoin addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>这些是你接受支付的比特币地址。当支付时你可以给出不同的地址，以便追踪不同的支付者。</translation>
+        <translation>这些是你接受支付的财富币地址。当支付时你可以给出不同的地址，以便追踪不同的支付者。</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="36"/>
@@ -75,7 +75,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/addressbookpage.ui" line="102"/>
         <source>Sign a message to prove you own this address</source>
-        <translation>发送签名消息以证明您是该比特币地址的拥有者</translation>
+        <translation>发送签名消息以证明您是该财富币地址的拥有者</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="105"/>
@@ -212,7 +212,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location filename="../askpassphrasedialog.cpp" line="101"/>
         <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR RICHCOINS&lt;/b&gt;!
 Are you sure you wish to encrypt your wallet?</source>
-        <translation>警告：如果您加密了您的钱包之后忘记了口令，您将会&lt;b&gt;失去所有的比特币&lt;/b&gt;！
+        <translation>警告：如果您加密了您的钱包之后忘记了口令，您将会&lt;b&gt;失去所有的财富币&lt;/b&gt;！
 确定要加密钱包吗？</translation>
     </message>
     <message>
@@ -224,7 +224,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
         <source>Richcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your richcoins from being stolen by malware infecting your computer.</source>
-        <translation>将关闭软件以完成加密过程。 请您谨记：钱包加密并不是万能的，电脑中毒，您的比特币还是有可能丢失。</translation>
+        <translation>将关闭软件以完成加密过程。 请您谨记：钱包加密并不是万能的，电脑中毒，您的财富币还是有可能丢失。</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="207"/>
@@ -279,7 +279,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../richcoingui.cpp" line="73"/>
         <source>Richcoin Wallet</source>
-        <translation>比特币钱包</translation>
+        <translation>财富币钱包</translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="215"/>
@@ -289,7 +289,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../richcoingui.cpp" line="248"/>
         <source>Show/Hide &amp;Richcoin</source>
-        <translation>显示/隐藏 比特币客户端</translation>
+        <translation>显示/隐藏 财富币客户端</translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="515"/>
@@ -344,7 +344,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../richcoingui.cpp" line="216"/>
         <source>Prove you control an address</source>
-        <translation>证明您拥有某个比特币地址</translation>
+        <translation>证明您拥有某个财富币地址</translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="235"/>
@@ -364,7 +364,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../richcoingui.cpp" line="240"/>
         <source>Show information about Richcoin</source>
-        <translation>显示比特币的相关信息</translation>
+        <translation>显示财富币的相关信息</translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="242"/>
@@ -414,7 +414,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../richcoingui.cpp" line="210"/>
         <source>Send coins to a Richcoin address</source>
-        <translation>向一个比特币地址发送比特币</translation>
+        <translation>向一个财富币地址发送财富币</translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="246"/>
@@ -424,7 +424,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../richcoingui.cpp" line="249"/>
         <source>Show or hide the Richcoin window</source>
-        <translation>显示或隐藏比特币客户端窗口</translation>
+        <translation>显示或隐藏财富币客户端窗口</translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="251"/>
@@ -501,12 +501,12 @@ Are you sure you wish to encrypt your wallet?</source>
         <location filename="../richcoingui.cpp" line="343"/>
         <location filename="../richcoingui.cpp" line="399"/>
         <source>Richcoin client</source>
-        <translation>比特币客户端</translation>
+        <translation>财富币客户端</translation>
     </message>
     <message numerus="yes">
         <location filename="../richcoingui.cpp" line="492"/>
         <source>%n active connection(s) to Richcoin network</source>
-        <translation><numerusform>%n 个到比特币网络的活动连接</numerusform></translation>
+        <translation><numerusform>%n 个到财富币网络的活动连接</numerusform></translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="540"/>
@@ -551,7 +551,7 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../richcoingui.cpp" line="649"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
-        <translation>该笔交易的数据量超限.您可以选择支付 %1 交易费， 交易费将支付给处理该笔交易的网络节点，有助于维持比特币网络的运行.  您愿意支付交易费用吗？</translation>
+        <translation>该笔交易的数据量超限.您可以选择支付 %1 交易费， 交易费将支付给处理该笔交易的网络节点，有助于维持财富币网络的运行.  您愿意支付交易费用吗？</translation>
     </message>
     <message>
         <location filename="../richcoingui.cpp" line="654"/>
@@ -614,7 +614,7 @@ Address: %4
     <message>
         <location filename="../richcoin.cpp" line="112"/>
         <source>A fatal error occured. Richcoin can no longer continue safely and will quit.</source>
-        <translation>发生致命错误. 比特币客户端的安全存在问题，将退出.</translation>
+        <translation>发生致命错误. 财富币客户端的安全存在问题，将退出.</translation>
     </message>
 </context>
 <context>
@@ -650,22 +650,22 @@ Address: %4
     <message>
         <location filename="../optionsdialog.cpp" line="273"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;比特币金额单位:</translation>
+        <translation>&amp;财富币金额单位:</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="277"/>
         <source>Choose the default subdivision unit to show in the interface, and when sending coins</source>
-        <translation>选择显示及发送比特币时使用的最小单位</translation>
+        <translation>选择显示及发送财富币时使用的最小单位</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="284"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>在交易清单中&amp;显示比特币地址</translation>
+        <translation>在交易清单中&amp;显示财富币地址</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="285"/>
         <source>Whether to show Richcoin addresses in the transaction list</source>
-        <translation>是否在交易清单中显示比特币地址</translation>
+        <translation>是否在交易清单中显示财富币地址</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="303"/>
@@ -733,7 +733,7 @@ Address: %4
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
         <source>The entered address &quot;%1&quot; is not a valid Richcoin address.</source>
-        <translation>您输入的 &quot;%1&quot; 不是合法的比特币地址.</translation>
+        <translation>您输入的 &quot;%1&quot; 不是合法的财富币地址.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
@@ -811,7 +811,7 @@ Address: %4
     <message>
         <location filename="../optionsdialog.cpp" line="206"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
-        <translation>建议支付交易费用，有助于您的交易得到尽快处理.  绝大多数交易的字节数为 1 kB. 建议支付0.01个比特币.</translation>
+        <translation>建议支付交易费用，有助于您的交易得到尽快处理.  绝大多数交易的字节数为 1 kB. 建议支付0.01个财富币.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="222"/>
@@ -821,7 +821,7 @@ Address: %4
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
         <source>Automatically start Richcoin after logging in to the system</source>
-        <translation>系统启动后自动运行比特币客户端软件</translation>
+        <translation>系统启动后自动运行财富币客户端软件</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="226"/>
@@ -844,7 +844,7 @@ Address: %4
     <message>
         <location filename="../forms/messagepage.ui" line="38"/>
         <source>The address to sign the message with  (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>用来签名的比特币地址  (例如 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>用来签名的财富币地址  (例如 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location filename="../forms/messagepage.ui" line="48"/>
@@ -899,7 +899,7 @@ Address: %4
     <message>
         <location filename="../forms/messagepage.ui" line="114"/>
         <source>Sign a message to prove you own this address</source>
-        <translation>发送签名消息以证明您是该比特币地址的拥有者</translation>
+        <translation>发送签名消息以证明您是该财富币地址的拥有者</translation>
     </message>
     <message>
         <location filename="../forms/messagepage.ui" line="117"/>
@@ -909,7 +909,7 @@ Address: %4
     <message>
         <location filename="../messagepage.cpp" line="30"/>
         <source>Enter a Richcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>请输入比特币地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>请输入财富币地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location filename="../messagepage.cpp" line="83"/>
@@ -922,7 +922,7 @@ Address: %4
     <message>
         <location filename="../messagepage.cpp" line="83"/>
         <source>%1 is not a valid address.</source>
-        <translation>%1 不是合法的比特币地址。</translation>
+        <translation>%1 不是合法的财富币地址。</translation>
     </message>
     <message>
         <location filename="../messagepage.cpp" line="90"/>
@@ -955,7 +955,7 @@ Address: %4
     <message>
         <location filename="../optionsdialog.cpp" line="348"/>
         <source>Automatically open the Richcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动在路由器中打开比特币端口。只有当您的路由器开启 UPnP 选项时此功能才有效。</translation>
+        <translation>自动在路由器中打开财富币端口。只有当您的路由器开启 UPnP 选项时此功能才有效。</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="351"/>
@@ -965,7 +965,7 @@ Address: %4
     <message>
         <location filename="../optionsdialog.cpp" line="352"/>
         <source>Connect to the Bitcon network through a SOCKS4 proxy (e.g. when connecting through Tor)</source>
-        <translation>通过一个SOCKS4代理连接到比特币网络 (如使用Tor连接时)</translation>
+        <translation>通过一个SOCKS4代理连接到财富币网络 (如使用Tor连接时)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="357"/>
@@ -1007,7 +1007,7 @@ Address: %4
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Richcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>现在显示的消息可能是过期的. 在连接上比特币网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成.</translation>
+        <translation>现在显示的消息可能是过期的. 在连接上财富币网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成.</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="89"/>
@@ -1177,7 +1177,7 @@ Address: %4
     <message>
         <location filename="../forms/rpcconsole.ui" line="174"/>
         <source>On testnet</source>
-        <translation>当前为比特币测试网络</translation>
+        <translation>当前为财富币测试网络</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="197"/>
@@ -1352,7 +1352,7 @@ Address: %4
     <message>
         <location filename="../sendcoinsdialog.cpp" line="154"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>错误: 交易被拒绝. 如果您使用的是备份钱包，可能存在两个钱包不同步的情况，另一个钱包中的比特币已经被使用，但本地的这个钱包尚没有记录。</translation>
+        <translation>错误: 交易被拒绝. 如果您使用的是备份钱包，可能存在两个钱包不同步的情况，另一个钱包中的财富币已经被使用，但本地的这个钱包尚没有记录。</translation>
     </message>
 </context>
 <context>
@@ -1416,7 +1416,7 @@ Address: %4
     <message>
         <location filename="../sendcoinsentry.cpp" line="26"/>
         <source>Enter a Richcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>请输入比特币地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>请输入财富币地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1556,8 +1556,8 @@ Address: %4
     </message>
     <message>
         <location filename="../transactiondesc.cpp" line="229"/>
-        <source>Generated coins must wait 120 blocks before they can be spent.  When you generated this block, it was broadcast to the network to be added to the block chain.  If it fails to get into the chain, it will change to &quot;not accepted&quot; and not be spendable.  This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>新生产的比特币必须等待120个数据块之后才能被使用. 当您生产出此数据块,它将被广播至比特币网络并添加至数据链. 如果添加到数据链失败, 它的状态将变成&quot;不被接受&quot;，生产的比特币将不能使用. 在您生产新数据块的几秒钟内, 如果其它节点也生产出同样的数据块，有可能会发生这种情况.</translation>
+        <source>Generated coins must wait 88 blocks before they can be spent.  When you generated this block, it was broadcast to the network to be added to the block chain.  If it fails to get into the chain, it will change to &quot;not accepted&quot; and not be spendable.  This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>新生产的财富币必须等待88个数据块之后才能被使用. 当您生产出此数据块,它将被广播至财富币网络并添加至数据链. 如果添加到数据链失败, 它的状态将变成&quot;不被接受&quot;，生产的财富币将不能使用. 在您生产新数据块的几秒钟内, 如果其它节点也生产出同样的数据块，有可能会发生这种情况.</translation>
     </message>
 </context>
 <context>
@@ -1865,12 +1865,12 @@ Address: %4
     <message>
         <location filename="../forms/verifymessagedialog.ui" line="20"/>
         <source>Enter the message and signature below (be careful to correctly copy newlines, spaces, tabs and other invisible characters) to obtain the Richcoin address used to sign the message.</source>
-        <translation>请在下面输入消息和签名 (注意不要遗漏换行、空格和缩进符这些看不见的字符) 获取用来签名的比特币地址.</translation>
+        <translation>请在下面输入消息和签名 (注意不要遗漏换行、空格和缩进符这些看不见的字符) 获取用来签名的财富币地址.</translation>
     </message>
     <message>
         <location filename="../forms/verifymessagedialog.ui" line="62"/>
         <source>Verify a message and obtain the Richcoin address used to sign the message</source>
-        <translation>验证消息并获取用来签名的比特币地址</translation>
+        <translation>验证消息并获取用来签名的财富币地址</translation>
     </message>
     <message>
         <location filename="../forms/verifymessagedialog.ui" line="65"/>
@@ -1900,12 +1900,12 @@ Address: %4
     <message>
         <location filename="../verifymessagedialog.cpp" line="28"/>
         <source>Enter Richcoin signature</source>
-        <translation>输入比特币签名</translation>
+        <translation>输入财富币签名</translation>
     </message>
     <message>
         <location filename="../verifymessagedialog.cpp" line="29"/>
         <source>Click &quot;Verify Message&quot; to obtain address</source>
-        <translation>单击 &quot;验证消息&quot; 获取比特币地址</translation>
+        <translation>单击 &quot;验证消息&quot; 获取财富币地址</translation>
     </message>
     <message>
         <location filename="../verifymessagedialog.cpp" line="55"/>
@@ -1975,7 +1975,7 @@ Address: %4
     <message>
         <location filename="../richcoinstrings.cpp" line="43"/>
         <source>Richcoin version</source>
-        <translation>比特币版本</translation>
+        <translation>财富币版本</translation>
     </message>
     <message>
         <location filename="../richcoinstrings.cpp" line="44"/>
@@ -2229,7 +2229,7 @@ Address: %4
         <source>
 SSL options: (see the Richcoin Wiki for SSL setup instructions)</source>
         <translation>
-SSL 选项: (SSL 安装教程具体见比特币维基百科)
+SSL 选项: (SSL 安装教程具体见财富币维基百科)
 </translation>
     </message>
     <message>
@@ -2269,12 +2269,12 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     <message>
         <location filename="../richcoinstrings.cpp" line="121"/>
         <source>Cannot obtain a lock on data directory %s.  Richcoin is probably already running.</source>
-        <translation>无法给数据目录 %s 加锁。比特币进程可能已在运行。</translation>
+        <translation>无法给数据目录 %s 加锁。财富币进程可能已在运行。</translation>
     </message>
     <message>
         <location filename="../richcoinstrings.cpp" line="48"/>
         <source>Richcoin</source>
-        <translation>比特币</translation>
+        <translation>财富币</translation>
     </message>
     <message>
         <location filename="../richcoinstrings.cpp" line="30"/>
@@ -2389,7 +2389,7 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     <message>
         <location filename="../richcoinstrings.cpp" line="32"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
-        <translation>错误: 该交易需支付到少 %s 的交易费，原因可能是该交易数量太小、构成太复杂或者使用了新近接收到的比特币</translation>
+        <translation>错误: 该交易需支付到少 %s 的交易费，原因可能是该交易数量太小、构成太复杂或者使用了新近接收到的财富币</translation>
     </message>
     <message>
         <location filename="../richcoinstrings.cpp" line="35"/>
@@ -2429,12 +2429,12 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     <message>
         <location filename="../richcoinstrings.cpp" line="28"/>
         <source>Unable to bind to %s on this computer. Richcoin is probably already running.</source>
-        <translation>无法在本机绑定 %s 端口 . 比特币客户端软件可能已经在运行.</translation>
+        <translation>无法在本机绑定 %s 端口 . 财富币客户端软件可能已经在运行.</translation>
     </message>
     <message>
         <location filename="../richcoinstrings.cpp" line="71"/>
         <source>Find peers using internet relay chat (default: 0)</source>
-        <translation>通过IRC聊天室查找网络上的比特币节点 (缺省: 0)</translation>
+        <translation>通过IRC聊天室查找网络上的财富币节点 (缺省: 0)</translation>
     </message>
     <message>
         <location filename="../richcoinstrings.cpp" line="72"/>
@@ -2444,7 +2444,7 @@ SSL 选项: (SSL 安装教程具体见比特币维基百科)
     <message>
         <location filename="../richcoinstrings.cpp" line="74"/>
         <source>Find peers using DNS lookup (default: 1)</source>
-        <translation>通过DNS查找网络上的比特币节点 (缺省: 1)</translation>
+        <translation>通过DNS查找网络上的财富币节点 (缺省: 1)</translation>
     </message>
     <message>
         <location filename="../richcoinstrings.cpp" line="81"/>
@@ -2541,7 +2541,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     <message>
         <location filename="../richcoinstrings.cpp" line="25"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong Richcoin will not work properly.</source>
-        <translation>警告：请确定您当前计算机的日期和时间是正确的。比特币将无法在错误的时间下正常工作。</translation>
+        <translation>警告：请确定您当前计算机的日期和时间是正确的。财富币将无法在错误的时间下正常工作。</translation>
     </message>
 </context>
 </TS>

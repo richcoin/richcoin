@@ -33,7 +33,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 
-uint256 hashGenesisBlock("0xecba185817b726ef62e53afb14241a8095bd9613d2d3df679911029b83c98e5b");
+uint256 hashGenesisBlock("0x9dbb879b261d5b10d345efa7369c43f9d10e4c3c81f284aa916191c1c0b54f10");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Richcoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2076,7 +2076,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.GetHash() = %s\n", block.GetHash().ToString().c_str());
         printf("hashGenesisBlock = %s\n", hashGenesisBlock.ToString().c_str());
         printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0xba3827aaf56440074e5436db36421d3a38645bc0f1a7c378a48b7daf3c078256"));
+        assert(block.hashMerkleRoot == uint256("0x26e3a0384b7578102c01a8fe8245ce4a5c5ded4a041ffc49053274d68ca6f296"));
 
         // If genesis block hash does not match, then generate new genesis hash.
         if (false && block.GetHash() != hashGenesisBlock)
