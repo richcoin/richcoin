@@ -837,40 +837,37 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     int64 nSubsidy = 88 * COIN;
     if(nHeight==1)
     {
-        nSubsidy=1000120*COIN;
+        nSubsidy=1124776*COIN;
     }
-    else if(nHeight < 588)
+    else if(nHeight <= 588)
     {
         nSubsidy = 0 * COIN;
     }
-    else if(nHeight < 688)
-    {
-        nSubsidy = 1 * COIN;
-    }
-    else if(nHeight < 788)
-    {
-        nSubsidy = 2 * COIN;
-    }
-    else if(nHeight < 888)
-    {
-        nSubsidy = 4 * COIN;
-    }
-    else if(nHeight < 988)
+    else if(nHeight <= 688)
     {
         nSubsidy = 8 * COIN;
     }
-    else if(nHeight < 1888)
+    else if(nHeight <= 788)
     {
-        nSubsidy = 16 * COIN;
+        nSubsidy = 18 * COIN;
     }
-    else if(nHeight < 2888)
+    else if(nHeight <= 888)
     {
-        nSubsidy = 32 * COIN;
+        nSubsidy = 28 * COIN;
     }
-    else if(nHeight < 5888)
+    else if(nHeight <= 988)
     {
-        nSubsidy = 64 * COIN;
+        nSubsidy = 38 * COIN;
     }
+    else if(nHeight <= 1888)
+    {
+        nSubsidy = 58 * COIN;
+    }
+    else if(nHeight <= 2888)
+    {
+        nSubsidy = 68 * COIN;
+    }
+
 
 
     // Subsidy is cut in half every 499368 blocks, which will occur approximately every 508 days
@@ -2055,8 +2052,8 @@ bool LoadBlockIndex(bool fAllowNew)
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 32 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+        txNew.vout[0].nValue = 0 * COIN;//Genesis block is zero
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("0401888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
